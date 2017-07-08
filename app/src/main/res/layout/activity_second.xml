@@ -7,14 +7,16 @@
     android:orientation="vertical"
     android:id="@+id/linear_root"
     android:layout_height="match_parent"
+    android:background="#ffb300"
     tools:context="com.example.archit.androidtutorial.SecondActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.2"
+        android:layout_weight="1.5"
         android:id="@+id/image"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher"
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -23,7 +25,7 @@
         android:id="@+id/tv1"
         android:gravity="center"
         android:textSize="30dp"
-        android:background="#c7c6c6"/>
+        android:background="#28a79b"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,6 +39,13 @@
             android:textSize="20dp"
             android:padding="20dp"/>
     </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:onClick="mainmenu"
+        android:background="#28a79b"
+        android:layout_margin="20dp"        />
 
 
 

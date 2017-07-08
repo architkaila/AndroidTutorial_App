@@ -98,7 +98,7 @@ class MyAdapter extends ArrayAdapter<String> {
     String []items;
 
     public MyAdapter(@NonNull Context context, String[] items) {
-        super(context, R.layout.custom_layout, R.id.b,items);
+        super(context, R.layout.custom_layout, R.id.num,items);
         conf_ref = context;
         this.items = items;
     }
@@ -110,8 +110,12 @@ class MyAdapter extends ArrayAdapter<String> {
         LayoutInflater l = (LayoutInflater) conf_ref.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = l.inflate(R.layout.custom_layout,parent,false);
 
-        TextView b = (TextView) v.findViewById(R.id.b);
-        b.setText(items[position]);
+        TextView num = (TextView) v.findViewById(R.id.num);
+        TextView text = (TextView) v.findViewById(R.id.text);
+        String number =  String.valueOf(position);
+
+        num.setText(number);
+        text.setText(items[position]);
         
         return v;
     }

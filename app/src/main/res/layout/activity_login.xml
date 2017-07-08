@@ -6,16 +6,26 @@
     android:layout_height="match_parent"
     tools:context="com.example.archit.androidtutorial.LoginActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Into Your Account"
+            android:textColor="#414140"
+            android:textSize="35sp"/>
+
         <EditText
             android:id="@+id/username"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username" />
@@ -25,8 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="40dp"
             android:inputType="textPassword"/>
@@ -42,8 +52,8 @@
             android:layout_weight="1"
             android:text="Login"
             android:textColor="#fff"
-            android:background="#02b3e4"
-            android:layout_margin="20dp"
+            android:background="#28a79b"
+            android:layout_margin="30dp"
             android:onClick="login"/>
 
         <Button
@@ -51,10 +61,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#02b3e4"
+            android:background="#28a79b"
             android:text="Register"
             android:textColor="#fff"
-            android:layout_margin="20dp"
+            android:layout_margin="30dp"
             android:onClick="register"/>
 
         </LinearLayout>
@@ -66,7 +76,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="Skip Registration"
-            android:textColor="#02b3e4"
+            android:textColor="#28a79b"
             android:layout_gravity="center"
             android:textAllCaps="false"
             android:textSize="17dp"

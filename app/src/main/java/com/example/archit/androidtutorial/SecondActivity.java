@@ -1,9 +1,11 @@
 package com.example.archit.androidtutorial;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -75,6 +77,13 @@ public class SecondActivity extends AppCompatActivity {
                     "Component to any other component( Activity / Service / Broadcast Reciever)."+
                     "There are two types of Intent: Implicit and Explicit."};
 
+    int []images = {R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d};
+//    ,R.drawable.4,R.drawable.5,R.drawable.6,
+//            R.drawable.7,R.drawable.8,R.drawable.9,R.drawable.10,R.drawable.11,R.drawable.12,R.drawable.13,
+//            R.drawable.14,R.drawable.15,R.drawable.16,R.drawable.17,R.drawable.18,R.drawable.19,R.drawable.20,
+//            R.drawable.21,R.drawable.22,R.drawable.23,R.drawable.24,R.drawable.25,R.drawable.27,R.drawable.28,
+//            R.drawable.29,R.drawable.30,R.drawable.31};
+
 
 
     @Override
@@ -91,5 +100,12 @@ public class SecondActivity extends AppCompatActivity {
         tv1.setText(items[data]);
         tv2.setText(info[data]);
 
+        image.setImageResource(images[data]);
+
+    }
+
+    public void mainmenu(View v){
+        startActivity(new Intent(SecondActivity.this,FirstActivity.class));
+        finish();
     }
 }
